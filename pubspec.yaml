@@ -24,6 +24,7 @@ dependencies:
   intl: ^0.17.0
   http: ^0.13.1
   provider: ^5.0.0
+  transparent_image: ^2.0.0
   flutter:
     sdk: flutter
 

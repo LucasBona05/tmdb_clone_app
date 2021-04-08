@@ -7,8 +7,8 @@ class MovieController extends ChangeNotifier {
 
   MovieResponseModel movieResponseModel;
 
-  Future<MovieResponseModel> fetchAllMovies() async {
-    movieResponseModel = await _repository.getMovies();
+  Future<MovieResponseModel> fetchAllMovies({@required int page}) async {
+    movieResponseModel = await _repository.getMovies(page: page);
     return movieResponseModel;
   }
 }
